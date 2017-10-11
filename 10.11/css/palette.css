@@ -1,0 +1,103 @@
+/*
+* @Author: lenovo
+* @Date:   2017-10-10 11:05:28
+* @Last Modified by:   lenovo
+* @Last Modified time: 2017-10-11 17:53:19
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	overflow: hidden;
+	background-color: #fff;
+}
+main{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+ul.tools{
+    width: 130px;
+    height: 100%;
+    background: yellowgreen;
+    padding: 30px 10px;
+    border-right: 2px solid #000;
+}
+ul.tools>li{
+	width: 60px;
+	height: 60px;
+	border: 1px solid #fff;
+	float: left;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	text-align: center;
+	line-height: 60px;
+}
+ul.tools>li[active=true]{
+	border-color: chocolate;
+}
+.tools>li>input{
+	display: block;
+	margin: 18px auto;
+	outline: none;
+}
+ul.tools>.fg{
+	width: 130px;
+	height: auto;
+    border: 2px solid #fff;
+    margin: 10px auto;
+    float: left;
+}
+.right{
+	flex-grow: 1;
+	height: 100%;
+	background: skyblue;
+}
+.right .top{
+	width: 100%;
+	height: 120px;
+	/* border-bottom: 2px solid #ff6700; */
+}
+.right .bottom{
+	width: 100%;
+	height: calc(100% - 120px);  /*calc计算器，“-”前后必须有空格*/
+	background: #fff;
+	position: relative;
+}
+/* canvas{
+	border: 1px solid yellow;
+} */
+.eraser1{
+	width: 30px;
+	height: 30px;
+	background: red;
+	border: 1px solid #000;
+	display: none;
+	position: absolute;
+	top: 0;
+    left: 0;
+}
+.opacity{
+	width: 1000px;
+    height: 500px;
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.clipObj{
+	width: 200px;
+	height: 200px;
+	border: 1px dashed #00ff00;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

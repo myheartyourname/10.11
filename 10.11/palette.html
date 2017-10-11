@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>画板</title>
+	<link rel="stylesheet" href="css/palette.css">
+	<link rel="stylesheet" href="css/iconfont/iconfont.css">
+	<script src="js/index.js"></script>
+	<script src="js/palette.js"></script>
+</head>
+<body>
+	<main>
+		<ul class="tools">
+			<li id="line" class='iconfont icon-xiantiao tool' active='true'></li>
+			<li id="dash" class='iconfont icon-xuxian tool'></li>
+			<li id="rect" class='iconfont icon-juxing tool'></li>
+			<li id="poly" class='iconfont icon-duobianxing tool'></li>
+			<li id="polyJ" class='iconfont icon-xingxing tool'></li>
+			<li id="circle" class='iconfont icon-yuanxing tool'></li>
+			<li id="pencil" class='iconfont icon-iconupload tool'></li>
+			<div class="fg"></div>
+			<li id="styleF" class='iconfont icon-tianchong tool'></li>
+			<li id="colorF" class='tool'><input type="color"></li>
+			<li id="styleS" class='iconfont icon-miaobian tool'></li>
+			<li id="colorS" class='tool'><input type="color"></li>
+			<div class="fg"></div>
+			<li id="eraser" class='iconfont icon-xiangpi tool'></li>
+			<li id="font" class='iconfont icon-ziti tool'></li>
+			<li id="clip" class='iconfont icon-caiqie tool'></li>
+			<li id="save" class='iconfont icon-baocun tool'></li>
+			<li id="back" class="tool">撤回</li>
+		</ul>
+		<div class="right">
+			<div class="top"></div>
+			<div class="bottom">
+				<canvas width='1000' height='500'></canvas>
+			    <div class="opacity"></div>
+	            <div class="eraser1"></div>
+	            <div class="clipObj"></div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
